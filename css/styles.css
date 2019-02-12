@@ -1,0 +1,251 @@
+* {
+  font-family: helvetica;
+  /* border: solid red 1px; */
+  font-size: 14px;
+}
+body {
+  background-color: #F8F8F8;
+}
+
+img {
+  width: 28px;
+  height: 28px;
+}
+
+highlight {
+  color: gray;
+}
+
+.page {
+  display: flex;
+}
+
+/* NAVIGATION BAR */
+.nav {
+  background-color: white;
+  border-bottom: solid lightgray 1px;
+  height: 77px;
+  /* width: 1010px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.nav input {
+  height: 25px;
+}
+
+#logos {
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-around;
+  margin-left: 30px;
+}
+
+#logos img:first-child {
+  border-right: solid lightgray 1px;
+  padding-right: 15px;
+  margin-right: 15px;
+  align-self: center;
+}
+
+#logos img:nth-child(2) {
+  width: auto;
+}
+
+#search {
+  display: flex;
+  justify-content: center;
+}
+
+#search input {
+  background-color: #F8F8F8;
+}
+
+#profileIcons {
+  justify-content: space-between;
+  margin-right: 15px;
+}
+
+#profileIcons img {
+  margin: 0 15px 0 15px;
+}
+
+
+/* POST FEED */
+.leftColumn {
+  width: 616px;
+  /* height: 1010px; */
+  display: flex;
+  flex-direction: column;
+  border: solid 1px lightgray;
+  background-color: white;
+  margin: auto;
+  margin-right: 30px;
+}
+
+.postBanner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px 15px;
+  padding: 15px 0px;
+}
+
+.postBanner h3 {
+  margin: 0px 15px;
+}
+
+.postImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.postBottom {
+  padding: 15px;
+}
+
+/* LIKE BAR */
+.likeBar {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px black solid; */
+}
+
+.start {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+
+/* COMMENTS SECTION */
+#firebeard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#firebeard img {
+  width: 15px;
+  height: 15px;
+}
+
+#time {
+  font-size: 10px;
+  color: gray;
+  margin: 5px 0;
+}
+
+/* ADD COMMENT BAR */
+.addComment {
+  display: flex;
+  align-content: flex-end;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+}
+
+.addComment input {
+  border: none;
+  width: 100%;
+}
+
+
+/* SUGGESTION BAR */
+.rightColumn {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.rightColumn img {
+  width: 40px;
+  height: 40px;
+}
+
+.user img {
+  width: 50px;
+  height: 50px;
+}
+
+.user {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+.userName {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.watch {
+  width: inherit;
+  border: solid 1px lightgray;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.friends {
+  display: flex;
+}
+
+.friendsNames {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.suggestions {
+  width: inherit;
+  border: solid 1px lightgray;
+  background-color: white;
+}
+
+.see {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+
+
+
+
+
+
+/* QUERIES */
+@media only screen and (max-width:600px) {
+  #search {
+    display: none;
+  }
+
+  .postBanner {
+    background-color: transparent;
+  }
+
+  #profileIcons {
+    margin-right: 0px;
+  }
+
+  .leftColumn {
+    margin: 0px;
+    width: 100%;
+  }
+}
