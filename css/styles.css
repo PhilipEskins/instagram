@@ -25,7 +25,6 @@ highlight {
   background-color: white;
   border-bottom: solid lightgray 1px;
   height: 77px;
-  /* width: 1010px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,53 +35,52 @@ highlight {
   height: 25px;
 }
 
-#logos {
+.logos {
   display: flex;
   justify-content: flex-start;
   align-content: space-around;
   margin-left: 30px;
 }
 
-#logos img:first-child {
-  border-right: solid lightgray 1px;
+.logos img {
   padding-right: 15px;
   margin-right: 15px;
-  align-self: center;
-}
-
-#logos img:nth-child(2) {
   width: auto;
 }
 
-#search {
+.search {
   display: flex;
   justify-content: center;
 }
 
-#search input {
+.search input {
   background-color: #F8F8F8;
 }
 
-#profileIcons {
+.profileIcons {
   justify-content: space-between;
   margin-right: 15px;
 }
 
-#profileIcons img {
+.profileIcons img {
   margin: 0 15px 0 15px;
 }
 
 
-/* POST FEED */
+/* LEFT COLUMN */
 .leftColumn {
   width: 616px;
-  /* height: 1010px; */
   display: flex;
   flex-direction: column;
   border: solid 1px lightgray;
   background-color: white;
   margin: auto;
   margin-right: 30px;
+}
+
+.leftColumn a {
+  text-decoration: none;
+  color: black;
 }
 
 .postBanner {
@@ -94,7 +92,7 @@ highlight {
 }
 
 .postBanner h3 {
-  margin: 0px 15px;
+  margin: 0px 8px;
 }
 
 .postImage img {
@@ -110,7 +108,6 @@ highlight {
 .likeBar {
   display: flex;
   justify-content: space-between;
-  /* border: 1px black solid; */
 }
 
 .start {
@@ -152,7 +149,7 @@ highlight {
 }
 
 
-/* SUGGESTION BAR */
+/* RIGHT COLUMN */
 .rightColumn {
   width: 300px;
   display: flex;
@@ -263,8 +260,6 @@ highlight {
   width: inherit;
   display: flex;
   flex-direction: row;
-  /* height: 50px;
-  margin: 10px; */
   align-items: center;
   justify-content: space-between;
 }
@@ -283,6 +278,93 @@ highlight {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.pageInfo {
+  margin: 12px 0;
+  text-align: justify;
+  color: #c7c7c7;
+}
+
+.pageInfo a {
+  text-decoration: none;
+  color: #c7c7c7;
+  font-size: 11px;
+}
+
+.copyright {
+  color: #c7c7c7;
+}
+
+
+
+/* RED ROBINS PAGE */
+.rr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#rrPic img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  padding: 50px;
+}
+
+.rrProfile {
+  display: flex;
+  justify-content: center;
+}
+
+.allInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.rrName p{
+  font-size: 26px;
+}
+
+.rrFolowers {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.rrFolowers p {
+  font-size: 18px;
+}
+
+.rrFolowers strong {
+  font-size: 18px;
+}
+
+.pictures {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.rrPosts img {
+  width: 270px;
+  height: 270px;
+  margin: 10px;
+}
+
+.postViews {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rrRow1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rrRow2 {
+  display: flex;
+  justify-content: space-around;
 }
 
 
@@ -309,4 +391,11 @@ highlight {
   .rightColumn{
     display: none;
   }
+
+  .pictures img {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+  }
+
 }
