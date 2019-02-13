@@ -91,6 +91,10 @@ highlight {
   padding: 15px 0px;
 }
 
+.postBanner img {
+  border-radius: 50%;
+}
+
 .postBanner h3 {
   margin: 0px 8px;
 }
